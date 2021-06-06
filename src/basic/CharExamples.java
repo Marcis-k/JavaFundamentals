@@ -15,6 +15,8 @@ public class CharExamples {
 
             System.out.println(ch+i);
         }
+        System.out.println((char) 100);
+
 
     }
 

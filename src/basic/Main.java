@@ -30,6 +30,8 @@ public class Main {
         System.out.println("Char = " + charValue);
         System.out.println("boolean = " + booleanValue);
 
+        System.out.println("Hey jaunums ko comitot");
+
 
 
     }
