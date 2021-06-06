@@ -32,7 +32,7 @@ public class Main {
 
         System.out.println("Hey jaunums ko comitot");
 
-
+        System.out.println("3 jaunums mana gitaa");
 
     }
 }
