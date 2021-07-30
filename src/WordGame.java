@@ -1,33 +1,34 @@
+import javax.crypto.spec.PSource;
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class WordGame {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        //String x = scanner.toString();
-        String x = "qwqdasd";
 
-        System.out.println(solution(x));
+        String x = scanner.nextLine();
+        char[] charString = x.toCharArray();
+        solution(x, charString);
 
-
-
+        ;
     }
-    public String solution (String stdIn){
 
-        String stdOut;
-        char[] by2 = new char[0];
-        char[] by1 = new char[0];
+    public static void solution(String stdIn, char[] charString) {
 
-        for(int i=0; i < stdIn.length(); i++){
-            if(i == 0 || i % 2 == 0){
-                by2[i] = (char) i;
-            } else {
-                by1[i] = (char) i;
+        for (int i = 0; i < stdIn.length() - 1; i++) {
+            if (i == 0 || i % 2 == 0) {
+                System.out.print(charString[i]);
             }
-           // stdOut = Array.toString(by2) + "  " + Array.toString(by1);
-
         }
-        return "Array.toString(by2) + \"  \" + Array.toString(by1)";
+        System.out.print("  ");
+
+        for (int i = 0; i < stdIn.length(); i++) {
+            if (i % 2 != 0) {
+                System.out.print(charString[i]);
+            }
+        }
     }
+
 
 
 }
